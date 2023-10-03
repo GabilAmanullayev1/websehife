@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100&family=Pixelify+Sans&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: monospace;
+        }
+
+
+        .header{
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding: 20px;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            max-width: 100%;
+            max-height: 100%;
+            align-items: center;
+            z-index: 1000;
+            background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(92,29,253,1) 50%, rgba(252,176,69,1) 100%);;
+        }
+
+        .logo{font-family: 'M PLUS Rounded 1c', sans-serif;
+font-family: 'Pixelify Sans', cursive;
+    font-size: 36px; 
+    font-weight: bold; 
+    color: #ff0000; 
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7);
+}
+         .a{font-family: 'M PLUS Rounded 1c', sans-serif;
+font-family: 'Pixelify Sans', cursive;
+
+            color: red;
+            font-size: 20px;
+            margin: 20px;
+            font-weight: bold;
+         }
+    .section1{
+        height: auto;
+        width: auto;
+        background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    }
+
+    .section2{width: auto;
+    height: 200px; 
+    display: flex; 
+    margin: 0 auto;
+    padding: 30px;
+    margin-top: 90px;}
+
+    .section2 div{font-size: 20px;text-align: center;margin: 30px;}
+    .section2 p{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: large;}
+
+    .section3{ height: 300px;
+        width: auto;
+    background-color: black;}
+
+    .section1 img {
+    width: 200px; 
+    height: 200px; 
+    display: flex; 
+    margin: 0 auto;
+    padding: 30px;
+    margin-top: 90px; 
+    border-radius: 80%;}
+    
+    .section1 h1, .section1 p { text-align: center;
+                            font-size: 20px;
+                            margin: 20px;
+                            color: #ff0000;
+
+  
+    }
+    .section2 h1{font-size: 24px; /* Paragraf font büyüklüğünü ayarlayın */
+    animation: moveText 2s infinite; /* moveText adında bi}
+
+    .section{    background-color: #333; 
+    color: #fff; 
+    text-align: center; 
+    padding: 50px; 
+    position: relative; /* Position özelliği ekleyin */}
+    @keyframes moveText {
+    0% { transform: translateX(0); } 
+    50% { transform: translateX(20px); } 
+    100% { transform: translateX(0); } 
+}
+
+
+
+    .section4 p{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: large;
+}.section4 div{font-size: 20px;text-align: center;margin: 30px; }
+.footer{width: auto;height: 200px;background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,50,1) 57%, rgba(204,128,12,1) 100%);}
+.footer div{ display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+color: #ff0000;
+font-size: 30px;
+font-family: 'Pixelify Sans', cursive;}
+    </style>
+</head>
+<body>
+<header class="header">
+    <h1 class="logo"> Start Bootstrap</h1>
+    <nav class="navbar"> 
+     <a href="" class="a"><div class="material-symbols-outlined">
+        home</div>Home</a>
+     <a href="" class="a"><i class="material-symbols-outlined">
+        list_alt
+     </i> About</a>
+     <a href="" class="a"><i class="material-symbols-outlined">
+        call
+     </i>Contact</a>
+    </nav>
+
+</header>
+<section class="section1">
+    <div>
+    <img src="sayt.webp" alt="">
+    <h1>Full Width Pics</h1>
+    <p>Lorem ipsum dolor sit.</p>
+    </div>
+</section>
+<section class="section2">
+
+    <div class="div2"><h1 style="letter-spacing:10px; color:#ff0000">Full Width Backgrounds</h1>
+        <p>A single, lightweight helper class allows you to add engaging, full width background</p>
+         images to sections of your page.
+        The universe is almost 14 billion years old, and, wow! Life had no problem starting here on Earth! I think it would be inexcusably
+         egocentric of us to suggest that we're alone in the universe.</div>
+</section>
+
+<section class="section3">
+    <p></p>
+
+</section>
+<section class="section4">
+
+    <div class="div2"><h1 style="letter-spacing:10px; color:#ff0000">Full Width Backgrounds</h1>
+        <p>A single, lightweight helper class allows you to add engaging, full width background</p>
+         images to sections of your page.
+        The universe is almost 14 billion years old, and, wow! Life had no problem starting here on Earth! I think it would be inexcusably
+         egocentric of us to suggest that we're alone in the universe.</div>
+
+</section>
+
+<footer class="footer">
+   <div>Copyright © Your Website 2023</div>
+
+
+</footer>
+
+</body>
+</html>
