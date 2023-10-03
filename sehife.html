@@ -46,28 +46,19 @@ font-family: 'Pixelify Sans', cursive;
             font-size: 20px;
             margin: 20px;
             font-weight: bold;
+
+}
+
+
+.section2 ul li {
+    word-wrap: break-word;
          }
     .section1{
         height: auto;
         width: auto;
         background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+        background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(92,29,253,1) 50%, rgba(252,176,69,1) 100%);;
     }
-
-    .section2{width: auto;
-    height: 200px; 
-    display: flex; 
-    margin: 0 auto;
-    padding: 30px;
-    margin-top: 90px;}
-
-    .section2 div{font-size: 20px;text-align: center;margin: 30px;}
-    .section2 p{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: large;}
-
-    .section3{ height: 300px;
-        width: auto;
-    background-color: black;}
-
     .section1 img {
     width: 200px; 
     height: 200px; 
@@ -81,9 +72,19 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(
                             font-size: 20px;
                             margin: 20px;
                             color: #ff0000;
-
-  
     }
+    .section2{width: auto;
+    height: 200px; 
+    display: flex; 
+    margin: 0 auto;
+    padding: 30px;
+    margin-top: 90px;
+    max-height: 200px; /* İstenilen yüksekliği belirleyin */
+    overflow: hidden; 
+}
+
+    .section2 div{font-size: 20px;text-align: center;margin: 30px;}
+    .section2 p{text-align:left;font-family:  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: large;}
     .section2 h1{font-size: 24px; /* Paragraf font büyüklüğünü ayarlayın */
     animation: moveText 2s infinite; /* moveText adında bi}
 
@@ -98,13 +99,28 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(
     100% { transform: translateX(0); } 
 }
 
+    .section3{ height: 300px;
+        width: auto;
+        background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(92,29,253,1) 50%, rgba(252,176,69,1) 100%);}
+        .section3 box{display: flex;
+  background-color: DodgerBlue;}
 
 
-    .section4 p{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: large;
-}.section4 div{font-size: 20px;text-align: center;margin: 30px; }
-.footer{width: auto;height: 200px;background: rgb(2,0,36);
+ .box > div {
+  background-color: red;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+  font-family: "pixelify sans";
+}
+
+
+   .section4 p{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: large;
+}  .section4 div{ font-family:'Pixelify Sans'; font-size:40px;text-align: center;margin: 30px; }
+
+   .footer{width: auto;height: 200px;background: rgb(2,0,36);
 background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,50,1) 57%, rgba(204,128,12,1) 100%);}
-.footer div{ display: flex;
+   .footer div{ display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
@@ -124,7 +140,13 @@ font-family: 'Pixelify Sans', cursive;}
      </i> About</a>
      <a href="" class="a"><i class="material-symbols-outlined">
         call
-     </i>Contact</a>
+     </i>Contact</i>
+     <a href="" class="a"><span class="material-symbols-outlined">
+        language
+        </span>En</a>
+    <a href="" class="a"><span class="material-symbols-outlined">
+        logout
+        </span>Log out</a>
     </nav>
 
 </header>
@@ -139,22 +161,32 @@ font-family: 'Pixelify Sans', cursive;}
 
     <div class="div2"><h1 style="letter-spacing:10px; color:#ff0000">Full Width Backgrounds</h1>
         <p>A single, lightweight helper class allows you to add engaging, full width background</p>
-         images to sections of your page.
-        The universe is almost 14 billion years old, and, wow! Life had no problem starting here on Earth! I think it would be inexcusably
-         egocentric of us to suggest that we're alone in the universe.</div>
+        <ul style="text-align: left; list-style: none;">
+        <li > images to sections of your page on Earth! I think it would be inexcusably</li>
+        <li>The universe is almost 14 billion years old, and, wow! Life had no problem starting here</li>
+        <li> I think it would be inexcusably egocentric of us to suggest that we're alone in the universe.</li>
+    </ul>
+
+       </div>
 </section>
 
 <section class="section3">
-    <p></p>
+    <div class="box">
+        <div>80 M student on Bootstrap.org</div>
+        <div>263 M projects created on bootstrap.org</div>
+        <div>2 M teachers use Bootstrap.org</div>
+    </div>
 
 </section>
 <section class="section4">
 
     <div class="div2"><h1 style="letter-spacing:10px; color:#ff0000">Full Width Backgrounds</h1>
-        <p>A single, lightweight helper class allows you to add engaging, full width background</p>
-         images to sections of your page.
-        The universe is almost 14 billion years old, and, wow! Life had no problem starting here on Earth! I think it would be inexcusably
-         egocentric of us to suggest that we're alone in the universe.</div>
+        <p style="text-align: left;margin-left: 20%;">A single, lightweight helper class allows you to add engaging, full width background</p>
+        <ul style="text-align: left; list-style:none;margin-left: 20%;" >
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li></ul>
+        </div>
 
 </section>
 
